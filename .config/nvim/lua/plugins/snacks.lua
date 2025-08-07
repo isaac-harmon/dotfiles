@@ -3,6 +3,8 @@
 local winwidth = 0.9 -- Floating window width
 local winheight = 0.9 -- Floating window height
 
+local minwinwidth = 120 -- Minimum widow width in cells to use horizontal floating layout
+
 local freeWindow = {
 	width = winwidth,
 	height = winheight,
@@ -32,8 +34,8 @@ return {
 		{ '<leader>wm', function() Snacks.zen.zen() end, desc = '[M]aximize Window' },
 
 		-- File Search
-		{ '<leader>fe', function() Snacks.picker.explorer({ layout = 'sidebar', auto_close = true }) end, desc = '[E]xplorer (cwd)' },
-		{ '<leader>fE', function() Snacks.picker.explorer({ layout = 'sidebar', auto_close = true, cwd = '~'}) end, desc = '[E]xplorer (Home)' },
+		{ '<leader>ft', function() Snacks.picker.explorer() end, desc = '[T]ree (cwd)' },
+		{ '<leader>fT', function() Snacks.picker.explorer({ cwd = '~' }) end, desc = '[T]ree (root)' },
 		{ '<leader>ff', function() Snacks.picker.files() end, desc = '[F]ind (cwd)' },
 		{ '<leader>fF', function() Snacks.picker.files({ cwd = '~' }) end, desc = '[F]ind (Home)' },
 		{ '<leader>fr', function() Snacks.picker.recent() end, desc = '[R]ecent' },
@@ -82,12 +84,6 @@ return {
 					Snacks.debug.backtrace()
 				end
 				vim.print = _G.dd -- Override print to use snacks for `:=` command
-
-				-- Yazi
-				if vim.fn.executable("yazi") then
-					map('<leader>fy', function() Snacks.terminal.open("yazi") end, '[Y]azi (cwd)')
-					map('<leader>fY', function() Snacks.terminal.open("yazi", { cwd = "~" }) end, '[Y]azi (Home)')
-				end
 
 				-- Create some toggle mapping
 				Snacks.toggle.option("wrap", { name = "[L]ine Break" }):map("<leader>ol")
@@ -173,7 +169,7 @@ return {
 		git = { enabled = true },
 		lazygit = { enabled = true },
 		notify = { enabled = true },
-		explorer = { replace_netrw = true },
+		explorer = { replace_netrw = false },
 		terminal = { win = { style = 'float' }},
 		toggle = { notify = false },
 		notifier = {
@@ -198,20 +194,56 @@ return {
 			animate = { enabled = false },
 		},
 		styles = {
-			lazygit = freeWindow,
+			lazygit = borderedWindow,
 			blame_line = borderedWindow,
 			float = borderedWindow,
 			notification_history = borderedWindow,
 			zen = borderedWindow,
 		},
 		picker = {
+			sources = {
+				explorer = {
+					hidden = true,
+					ignored = true,
+					layout = function () return vim.o.columns >= minwinwidth and 'dropdown' or 'vertical' end,
+					auto_close = true,
+				},
+				files = {
+					hidden = true,
+					ignored = true,
+				},
+				grep = {
+					hidden = true,
+					ignored = true,
+				},
+			},
 			layout = {
 				cycle = true,
-				preset = 'default'
+				preset = function () return vim.o.columns >= minwinwidth and 'default' or 'vertical' end,
 			},
 			layouts = {
 				default = { layout = freeWindow },
 				select = { layout = borderedWindow },
+				dropdown = {
+					layout = {
+						box = "horizontal",
+						width = winwidth,
+						height = winheight,
+						border = 'none',
+						{
+							box = "vertical",
+							{ win = "list", title = " Results ", title_pos = "center", border = "rounded" },
+							{ win = "input", height = 1, border = "rounded", title = "{title} {live} {flags}", title_pos = "center" },
+						},
+						{
+							win = "preview",
+							title = "{preview:Preview}",
+							width = 0.75,
+							border = "rounded",
+							title_pos = "center",
+						},
+					},
+				},
 			},
 		},
 		dashboard = {

@@ -2,7 +2,7 @@ if status is-interactive
 
 	# Enhanced navigation
 	zoxide init fish | source
-	alias cd='z'
+	alias cd='z && ls'
 
 	alias ls='ls --color --group-directories-first'
 	

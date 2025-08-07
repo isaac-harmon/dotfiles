@@ -8,8 +8,13 @@ return {
 	keys = {
 		{
 			"<leader>fe",
-			"<cmd>Yazi cwd<cr>",
+			"<cmd>Yazi<cr>",
 			desc = "[E]xplorer",
+		},
+		{
+			"<leader>fE",
+			"<cmd>Yazi<cr>",
+			desc = "[E]xplorer (cwd)",
 		},
 	},
 	opts = {

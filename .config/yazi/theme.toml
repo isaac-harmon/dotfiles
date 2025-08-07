@@ -1,0 +1,3 @@
+[mode]
+normal_main = { fg = '#0f111b', bg = '#686f9a' }
+normal_alt = { fg = '#ecf0c1', bg = '#30365f' }

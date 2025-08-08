@@ -203,18 +203,8 @@ return {
 		picker = {
 			sources = {
 				explorer = {
-					hidden = true,
-					ignored = true,
 					layout = function () return vim.o.columns >= minwinwidth and 'dropdown' or 'vertical' end,
 					auto_close = true,
-				},
-				files = {
-					hidden = true,
-					ignored = true,
-				},
-				grep = {
-					hidden = true,
-					ignored = true,
 				},
 			},
 			layout = {

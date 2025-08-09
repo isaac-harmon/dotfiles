@@ -1,49 +1,50 @@
 -- Window
-vim.opt.termguicolors = true
-vim.opt.updatetime = 50
-vim.opt.laststatus = 3
-vim.opt.showcmd = false
+vim.o.winborder = 'rounded'
+vim.o.termguicolors = true
+vim.o.updatetime = 50
+vim.o.laststatus = 3
+vim.o.showcmd = false
 
 -- Number column
-vim.opt.number = true
-vim.opt.relativenumber = true
-vim.opt.signcolumn = 'yes'
+vim.o.number = true
+vim.o.relativenumber = true
+vim.o.signcolumn = 'yes'
 
 -- Cursor
-vim.opt.scrolloff = 99
-vim.opt.cursorline = true
+vim.o.scrolloff = 99
+vim.o.cursorline = true
 
 -- Tabs
 local tabSize = 4
 
-vim.opt.tabstop = tabSize
-vim.opt.softtabstop = tabSize
-vim.opt.shiftwidth = tabSize
+vim.o.tabstop = tabSize
+vim.o.softtabstop = tabSize
+vim.o.shiftwidth = tabSize
 
-vim.opt.expandtab = false
+vim.o.expandtab = false
 
 -- Indenting
-vim.opt.autoindent = true
-vim.opt.smartindent = true
+vim.o.autoindent = true
+vim.o.smartindent = true
 vim.g.autoformat = false
 
 -- Whitespace Hints
-vim.opt.list = true
-vim.opt.listchars = 'tab:┃ ,trail:*,multispace:*,leadmultispace:┃...,nbsp:+'
-vim.opt.showbreak = '--> '
+vim.o.list = true
+vim.o.listchars = 'tab:┃ ,trail:*,multispace:*,leadmultispace:┃...,nbsp:+'
+vim.o.showbreak = '--> '
 
 -- Wrapping
-vim.opt.linebreak = true
-vim.opt.breakindent = true
-vim.opt.wrap = false
+vim.o.linebreak = true
+vim.o.breakindent = true
+vim.o.wrap = false
 
 -- Searching
-vim.opt.ignorecase = true
-vim.opt.smartcase = true
+vim.o.ignorecase = true
+vim.o.smartcase = true
 
 -- View Splitting
-vim.opt.splitright = true
-vim.opt.splitbelow = true
+vim.o.splitright = true
+vim.o.splitbelow = true
 
 -- UX
-vim.opt.confirm = true
+vim.o.confirm = true

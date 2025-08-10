@@ -44,7 +44,7 @@ alias ls='ls --color --group-directories-first'
 eval "$(starship init bash)"
 
 # Editor settings
-export EDITOR="zed"
+export EDITOR="nvim"
 alias vi='nvim'
 alias vim='nvim'
 
@@ -58,6 +58,8 @@ function y() {
 }
 
 # Startup Script
+fastfetch
+echo
 ls
 
 

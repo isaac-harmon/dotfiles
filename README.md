@@ -4,8 +4,6 @@ As I could likely break my linux installation at any moment, I've archived these
 ## Programs:
 - [**Foot**](https://codeberg.org/dnkl/foot) - Simple terminal emulator (A [**Nerd Font**](https://www.nerdfonts.com/) is recommended for support of symbols. I use JetBrains Mono as my default.)
 
-- [**Fish**](https://fishshell.com/) - Functional, user-friendly shell
-
 - [**Starship**](https://starship.rs/) - Fancy terminal prompt
 
 - [**Yazi**](https://github.com/sxyazi/yazi) - File Manager

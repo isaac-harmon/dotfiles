@@ -21,6 +21,7 @@ eval "$(zoxide init zsh)"
 # Bash Prompt
 eval "$(starship init zsh)"
 
+alias cd='z'
 alias ls='ls --color --group-directories-first'
 
 # Editor settings

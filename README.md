@@ -1,17 +1,17 @@
 # My custom programming configs
 As I could likely break my linux installation at any moment, I've archived these here to get back up and running a little faster should (or when) I need them.
 
-## Programs:
-- [**Foot**](https://codeberg.org/dnkl/foot) - Simple terminal emulator (A [**Nerd Font**](https://www.nerdfonts.com/) is recommended for support of symbols. I use JetBrains Mono as my default.)
+## Programs and Dependencies
+- [**Foot**](https://codeberg.org/dnkl/foot) - Simple terminal emulator (A [**Nerd Font**](https://www.nerdfonts.com/) is recommended for support of symbols. I use JetBrains Mono as my default)
 
-- [**Zsh**](https://www.zsh.org/) - Easily extendable interactable shell. Modified by a few plugins installed in ~/.config/zsh.
+- [**Zsh**](https://www.zsh.org/) - Easily extendable interactable shell. Modified by a few plugins installed in ~/.config/zsh:
     - [zsh-autocomplete](https://github.com/marlonrichert/zsh-autocomplete)
     - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
     - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
 
-- [**Starship**](https://starship.rs/) - Fancy terminal prompt
+- [**Zoxide**](https://github.com/ajeetdsouza/zoxide) - Upgrade for cd
 
-- [**Yazi**](https://github.com/sxyazi/yazi) - File Manager
+- [**Yazi**](https://github.com/sxyazi/yazi) - Vim-like file manager
 
 - [**Neovim**](https://neovim.io/) - Hyper customizable text editor. Plugins managed by [lazy.nvim](https://github.com/folke/lazy.nvim), which include:
     - [blink.cmp](https://github.com/saghen/blink.cmp) - Autocompletion
@@ -26,11 +26,10 @@ As I could likely break my linux installation at any moment, I've archived these
     - [snacks.nvim](https://github.com/folke/snacks.nvim) - Collection of utility, Quality-of-Life, and UI plugins
     - [spaceduck](https://github.com/pineapplegiant/spaceduck) - Colorscheme
     - [which-key.nvim](https://github.com/folke/which-key.nvim) - Keymap reminders
-    - [yazi.nvim](https://github.com/mikavilpas/yazi.nvim) - Netrw replacement
-
-- [**Fastfetch**](https://github.com/fastfetch-cli/fastfetch) - Terminal startup rice
-
-## Dependencies
-- [**Zoxide**](https://github.com/ajeetdsouza/zoxide) - Upgrade for cd
+    - [yazi.nvim](https://github.com/mikavilpas/yazi.nvim) - Substitutes Netrw with Yazi
 
 - [**Lazygit**](https://github.com/jesseduffield/lazygit) - Streamlined TUI Git interface
+
+- [**Starship**](https://starship.rs/) - Fancy terminal prompt using a modified version of the Nerd Fonts preset
+
+- [**Fastfetch**](https://github.com/fastfetch-cli/fastfetch) - Terminal startup rice

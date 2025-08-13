@@ -92,7 +92,6 @@ $os\
 $container\
 $netns\
 $shell\
-$time\
 """
 
 [aws]
@@ -285,10 +284,3 @@ symbol = " "
 
 [gradle]
 symbol = " "
-
-[time]
-disabled = false
-format = "[$time]($style) "
-time_format = "%R"
-utc_time_offset = "local"
-style = "italic dimmed white"

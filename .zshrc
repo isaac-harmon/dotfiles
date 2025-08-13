@@ -18,20 +18,10 @@ source ~/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Custom scripting starts here
 eval "$(zoxide init zsh)"
-
-cd() {
-	if [ -n "$1" ]; then
-		z "$@"
-	else
-		z ~
-	fi
-	ls
-}
-
-alias ls='ls --color --group-directories-first'
-
 # Bash Prompt
 eval "$(starship init zsh)"
+
+alias ls='ls --color --group-directories-first'
 
 # Editor settings
 export EDITOR="nvim"
@@ -51,4 +41,3 @@ function y() {
 fastfetch
 echo
 ls
-

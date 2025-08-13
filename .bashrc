@@ -58,9 +58,4 @@ function y() {
 }
 
 # Startup Script
-fastfetch
-echo
 ls
-
-
-

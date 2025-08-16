@@ -5,7 +5,6 @@ As I could likely break my linux installation at any moment, I've archived these
 - [**Foot**](https://codeberg.org/dnkl/foot) - Simple terminal emulator (A [**Nerd Font**](https://www.nerdfonts.com/) is recommended for support of symbols. I use JetBrains Mono as my default)
 
 - [**Zsh**](https://www.zsh.org/) - Easily extendable interactable shell. Modified by a few plugins installed in ~/.config/zsh:
-    - [zsh-autocomplete](https://github.com/marlonrichert/zsh-autocomplete)
     - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
     - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
 

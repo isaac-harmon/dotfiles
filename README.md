@@ -1,6 +1,8 @@
 # My custom programming configs
 As I could likely break my linux installation at any moment, I've archived these here to get back up and running a little faster should (or when) I need them.
 
+Install script is available for Fedora, other distros will need to install dependencies manually.
+
 ## Programs and Dependencies
 - [**Foot**](https://codeberg.org/dnkl/foot) - Simple terminal emulator (A [**Nerd Font**](https://www.nerdfonts.com/) is recommended for support of symbols. I use JetBrains Mono as my default)
 

@@ -1,9 +1,16 @@
 #!/usr/bin/bash
 
 echo " <-- Adding repositories -->"
+echo
+
 sudo dnf copr enable dejan/lazygit
-dnf copr enable atim/starship
+echo
+
+sudo dnf copr enable atim/starship
+echo
+
 sudo dnf copr enable lihaohong/yazi
+echo
 
 echo " <-- Installing required packages -->"
 sudo dnf install fastfetch foot git lazygit neovim starship yazi zoxide zsh

@@ -1,7 +1,8 @@
 # My custom programming configs
 As I could likely break my linux installation at any moment, I've archived these here to get back up and running a little faster should (or when) I need them.
 
-Install script is available for Fedora, other distros will need to install dependencies manually.
+[Installation](#installation)
+[Dependencies](#dependencies)
 
 ![Neovim Homepage](Assets/Homepage.png)
 ![Code Editor](Assets/Editor.png)
@@ -9,7 +10,18 @@ Install script is available for Fedora, other distros will need to install depen
 ![Yazi File Manager](Assets/File-Management.png)
 ![Lazygit Wrapper](Assets/Lazygit.png)
 
-## Programs and Dependencies
+## Installation
+**Fedora**: Run this command in the terminal to install using an install script:
+```sh
+curl -s https://raw.githubusercontent.com/isaac-harmon/dotfiles/refs/heads/main/install.sh | sh
+```
+
+**Other Distrobutions**: Clone the repository using the command below, dependencies and symlinks will need to be installed manually:
+```sh
+git clone https://github.com/isaac-harmon/dotfiles.git
+```
+
+## Dependencies
 - [**Foot**](https://codeberg.org/dnkl/foot) - Simple terminal emulator (A [**Nerd Font**](https://www.nerdfonts.com/) is recommended for support of symbols. I use JetBrains Mono as my default)
 
 - [**Zsh**](https://www.zsh.org/) - Easily extendable interactable shell. Modified by a few plugins installed in ~/.config/zsh:

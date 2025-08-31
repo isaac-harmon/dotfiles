@@ -3,6 +3,12 @@ As I could likely break my linux installation at any moment, I've archived these
 
 Install script is available for Fedora, other distros will need to install dependencies manually.
 
+![Neovim Homepage](Assets/Homepage.png)
+![Code Editor](Assets/Editor.png)
+![Floating Terminal](Assets/Terminal.png)
+![Yazi File Manager](Assets/File-Management.png)
+![Lazygit Wrapper](Assets/Lazygit.png)
+
 ## Programs and Dependencies
 - [**Foot**](https://codeberg.org/dnkl/foot) - Simple terminal emulator (A [**Nerd Font**](https://www.nerdfonts.com/) is recommended for support of symbols. I use JetBrains Mono as my default)
 

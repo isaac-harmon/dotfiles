@@ -13,7 +13,7 @@ sudo dnf copr enable lihaohong/yazi
 echo
 
 echo " <-- Installing required packages -->"
-sudo dnf install fastfetch foot git lazygit neovim starship yazi zoxide zsh
+sudo dnf install stow fastfetch foot git lazygit neovim starship yazi zoxide zsh
 
 echo " <-- Downloading Zsh Plugins -->"
 mkdir ~/.config/zsh

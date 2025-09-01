@@ -170,8 +170,11 @@ return {
 		lazygit = { enabled = true },
 		notify = { enabled = true },
 		explorer = { replace_netrw = false },
-		terminal = { win = { style = 'float' }},
 		toggle = { notify = false },
+		terminal = {
+			win = { style = 'float' },
+			shell = "/usr/bin/zsh",
+		},
 		notifier = {
 			timeout = 5000,
 			width = { min = 1, max = 0.4},

@@ -1,8 +1,7 @@
 # My custom programming configs
 As I could likely break my linux installation at any moment, I've archived these here to get back up and running a little faster should (or when) I need them.
 
-[Installation](#installation)
-[Dependencies](#dependencies)
+[Installation](#installation) | [Dependencies](#dependencies)
 
 ![Neovim Homepage](Assets/Homepage.png)
 ![Code Editor](Assets/Editor.png)
@@ -16,7 +15,7 @@ As I could likely break my linux installation at any moment, I've archived these
 curl -s https://raw.githubusercontent.com/isaac-harmon/dotfiles/refs/heads/main/install.sh | sh
 ```
 
-**Other Distrobutions**: Clone the repository using the command below, dependencies and symlinks will need to be installed manually:
+**Other Distributions**: Clone the repository using the command below, dependencies and symlinks will need to be installed manually:
 ```sh
 git clone https://github.com/isaac-harmon/dotfiles.git
 ```
@@ -36,6 +35,7 @@ git clone https://github.com/isaac-harmon/dotfiles.git
     - [blink.cmp](https://github.com/saghen/blink.cmp) - Autocompletion
     - [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim) - Git information (Statusbar icons, Inline blame, etc)
     - [lazydev.nvim](https://github.com/folke/lazydev.nvim) - Lua LSP Configuration
+    - [live-preview.nvim](https://github.com/brianhuster/live-preview.nvim) - Live view of Markdown and HTML files in browser
     - [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim) - Bufferline / Statusbar UI tweaks
     - [noice.nvim](https://github.com/folke/noice.nvim) - Command line / Notification UI tweaks
     - [nvim-autopairs](https://github.com/windwp/nvim-autopairs) - Auto parentheses / quotes matching
@@ -46,6 +46,8 @@ git clone https://github.com/isaac-harmon/dotfiles.git
     - [spaceduck](https://github.com/pineapplegiant/spaceduck) - Colorscheme
     - [which-key.nvim](https://github.com/folke/which-key.nvim) - Keymap reminders
     - [yazi.nvim](https://github.com/mikavilpas/yazi.nvim) - Substitutes Netrw with Yazi
+
+- [**Nix**](https://nixos.org/) - Declarative package manager for project dependencies
 
 - [**Lazygit**](https://github.com/jesseduffield/lazygit) - Streamlined TUI Git interface
 

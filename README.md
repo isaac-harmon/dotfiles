@@ -47,8 +47,6 @@ git clone https://github.com/isaac-harmon/dotfiles.git
     - [which-key.nvim](https://github.com/folke/which-key.nvim) - Keymap reminders
     - [yazi.nvim](https://github.com/mikavilpas/yazi.nvim) - Substitutes Netrw with Yazi
 
-- [**Nix**](https://nixos.org/) - Declarative package manager for project dependencies
-
 - [**Lazygit**](https://github.com/jesseduffield/lazygit) - Streamlined TUI Git interface
 
 - [**Starship**](https://starship.rs/) - Fancy terminal prompt using a modified version of the Nerd Fonts preset

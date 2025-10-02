@@ -1,0 +1,18 @@
+{
+    "editor.fontFamily": "JetBrains Mono Nerd Font",
+    "editor.autoIndentOnPaste": true,
+    "clangd.path": "/home/isaac/.config/VSCodium/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/21.1.0/clangd_21.1.0/bin/clangd",
+    "editor.minimap.renderCharacters": false,
+    "editor.minimap.showSlider": "always",
+    "editor.fontSize": 15,
+    "editor.acceptSuggestionOnEnter": "off",
+    "workbench.navigationControl.enabled": false,
+    "workbench.sideBar.location": "right",
+    "workbench.layoutControl.enabled": false,
+    "git.openRepositoryInParentFolders": "always",
+    "terminal.external.linuxExec": "ptyxis",
+    "telemetry.feedback.enabled": false,
+    "editor.renderWhitespace": "boundary",
+    "workbench.colorTheme": "Search Lights",
+    "files.trimTrailingWhitespace": true
+}

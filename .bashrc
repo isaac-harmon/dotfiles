@@ -27,8 +27,7 @@ unset rc
 # -- Custom Scripting Starts Here --
 
 # Enhanced navigation
-eval "$(zoxide init bash)"
-
+alias ls='ls --color --group-directories-first'
 cd() {
 	if [ -n "$1" ]; then
 		z "$@"
@@ -38,15 +37,8 @@ cd() {
 	ls
 }
 
-alias ls='ls --color --group-directories-first'
-
-# Bash Prompt
-eval "$(starship init bash)"
-
 # Editor settings
-export EDITOR="nvim"
-alias vi='nvim'
-alias vim='nvim'
+export EDITOR="codium"
 
 # Yazi cd to directory on exit
 function y() {
@@ -58,4 +50,6 @@ function y() {
 }
 
 # Startup Script
+eval "$(starship init bash)"
+eval "$(zoxide init bash)"
 ls

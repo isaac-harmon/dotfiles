@@ -53,11 +53,7 @@ git clone https://github.com/isaac-harmon/dotfiles.git ~/.dotfiles
 
 # Managing symlinks
 mv ~/.bashrc ~/.bashrc.bak
-mv ~/.zshrc ~/.zshrc.bak
 stow ~/.dotfiles
-
-# Deleting unnesseccary symlinks
-rm ~/install-fedora.sh
 
 # Ending output
 echo

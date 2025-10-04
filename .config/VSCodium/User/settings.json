@@ -1,7 +1,6 @@
 {
-    "editor.fontFamily": "JetBrains Mono Nerd Font",
+    "editor.fontFamily": "JetBrains Mono",
     "editor.autoIndentOnPaste": true,
-    "clangd.path": "/home/isaac/.config/VSCodium/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/21.1.0/clangd_21.1.0/bin/clangd",
     "editor.minimap.renderCharacters": false,
     "editor.minimap.showSlider": "always",
     "editor.fontSize": 15,
@@ -13,6 +12,19 @@
     "terminal.external.linuxExec": "ptyxis",
     "telemetry.feedback.enabled": false,
     "editor.renderWhitespace": "boundary",
-    "workbench.colorTheme": "Search Lights",
-    "files.trimTrailingWhitespace": true
+    "files.trimTrailingWhitespace": true,
+    "git.allowForcePush": true,
+    "terminal.integrated.enablePersistentSessions": false,
+    "terminal.integrated.shellIntegration.history": 0,
+    "window.restoreWindows": "none",
+    "terminal.integrated.fontSize": 15,
+    "debug.console.fontSize": 15,
+    "chat.editor.fontSize": 15,
+    "chat.fontSize": 15,
+    "markdown.preview.fontSize": 15,
+    "terminal.integrated.fontFamily": "monospace",
+    "clangd.path": "/home/isaac/.config/VSCodium/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/21.1.0/clangd_21.1.0/bin/clangd",
+    "window.autoDetectColorScheme": true,
+    "workbench.preferredDarkColorTheme": "Visual Studio Dark",
+    "workbench.iconTheme": "material-icon-theme"
 }

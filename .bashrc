@@ -26,9 +26,13 @@ unset rc
 
 # -- Custom Scripting Starts Here --
 
-# Enhanced navigation
+export EDITOR="codium"
+
+alias code='codium'
 alias ls='ls --color --group-directories-first'
-cd() {
+
+# Enhanced cd
+function cd() {
 	if [ -n "$1" ]; then
 		z "$@"
 	else
@@ -36,9 +40,6 @@ cd() {
 	fi
 	ls
 }
-
-# Editor settings
-export EDITOR="codium"
 
 # Yazi cd to directory on exit
 function y() {
@@ -52,4 +53,10 @@ function y() {
 # Startup Script
 eval "$(starship init bash)"
 eval "$(zoxide init bash)"
+
+if [ $(tput lines) -ge 30 ]; then
+	fastfetch
+	echo
+fi
+
 ls

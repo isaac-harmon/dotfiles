@@ -2,7 +2,6 @@
 
 alias ls='ls --color --group-directories-first'
 
-# Enhanced cd
 function cd() {
 	if [ -n "$1" ]; then
 		z "$@"
@@ -11,6 +10,9 @@ function cd() {
 	fi
 	ls
 }
+
+export EDITOR=vim
+export VISUAL=vim
 
 # Startup Script
 eval "$(starship init bash)"

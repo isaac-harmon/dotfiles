@@ -1,5 +1,29 @@
 # .bashrc
 
+alias ls='ls --color --group-directories-first'
+
+# Enhanced cd
+function cd() {
+	if [ -n "$1" ]; then
+		z "$@"
+	else
+		z ~
+	fi
+	ls
+}
+
+# Startup Script
+eval "$(starship init bash)"
+eval "$(zoxide init bash)"
+
+if [ $(tput lines) -ge 30 ]; then
+	fastfetch
+	echo
+fi
+ls
+
+# -- Custom Scripting Ends Here --
+
 # Source global definitions
 if [ -f /etc/bashrc ]; then
     . /etc/bashrc
@@ -24,39 +48,4 @@ if [ -d ~/.bashrc.d ]; then
 fi
 unset rc
 
-# -- Custom Scripting Starts Here --
-
-export EDITOR="codium"
-
-alias code='codium'
-alias ls='ls --color --group-directories-first'
-
-# Enhanced cd
-function cd() {
-	if [ -n "$1" ]; then
-		z "$@"
-	else
-		z ~
-	fi
-	ls
-}
-
-# Yazi cd to directory on exit
-function y() {
-	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
-	yazi "$@" --cwd-file="$tmp"
-	IFS= read -r -d '' cwd < "$tmp"
-	[ -n "$cwd" ] && [ "$cwd" != "$PWD" ] && builtin cd -- "$cwd" && echo && ls
-	rm -f -- "$tmp"
-}
-
-# Startup Script
-eval "$(starship init bash)"
-eval "$(zoxide init bash)"
-
-if [ $(tput lines) -ge 30 ]; then
-	fastfetch
-	echo
-fi
-
-ls
+. "$HOME/.cargo/env"

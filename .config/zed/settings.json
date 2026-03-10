@@ -1,0 +1,79 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "notification_panel": {
+    "default_width": 350.0,
+  },
+  "debugger": {
+    "stepping_granularity": "instruction",
+  },
+  "outline_panel": {
+    "default_width": 350.0,
+  },
+  "git_panel": {
+    "sort_by_path": true,
+    "tree_view": true,
+    "status_style": "label_color",
+    "default_width": 350.0,
+  },
+  "autosave": {
+    "after_delay": {
+      "milliseconds": 1000,
+    },
+  },
+  "project_panel": {
+    "bold_folder_labels": true,
+    "indent_size": 25.0,
+    "default_width": 350,
+  },
+  "collaboration_panel": {
+    "default_width": 350.0,
+    "dock": "right",
+  },
+  "tabs": {
+    "show_diagnostics": "all",
+    "show_close_button": "hidden",
+    "file_icons": true,
+    "git_status": true,
+  },
+  "title_bar": {
+    "show_user_picture": false,
+    "show_user_menu": false,
+    "show_sign_in": false,
+    "show_branch_icon": true,
+  },
+  "use_smartcase_search": true,
+  "diagnostics": {
+    "inline": {
+      "enabled": true,
+    },
+  },
+  "show_whitespaces": "boundary",
+  "indent_guides": {
+    "coloring": "indent_aware",
+  },
+  "vim": {
+    "use_smartcase_find": true,
+    "toggle_relative_line_numbers": true,
+  },
+  "minimap": {
+    "current_line_highlight": "none",
+    "show": "auto",
+  },
+  "scroll_beyond_last_line": "off",
+  "which_key": {
+    "delay_ms": 150,
+  },
+  "icon_theme": "Material Icon Theme",
+  "restore_on_startup": "launchpad",
+  "disable_ai": true,
+  "ui_font_size": 18.0,
+  "buffer_font_size": 15.0,
+  "theme": "One Dark Pro",
+}

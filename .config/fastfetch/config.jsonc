@@ -4,7 +4,7 @@
 		"padding": {
 			"top": 2,
 			"left": 4
-		},
+		}
 	},
 	"display": {
 		"size": {
@@ -22,15 +22,15 @@
 		},
 		{
 			"type": "host",
-			"keyColor": "Magenta",
+			"keyColor": "Magenta"
 		},
 		{
 			"type": "cpu",
-			"keyColor": "Magenta",
+			"keyColor": "Magenta"
 		},
 		{
 			"type": "gpu",
-			"keyColor": "Magenta",
+			"keyColor": "Magenta"
 		},
 		{
 			"type": "custom",
@@ -45,19 +45,19 @@
 		},
 		{
 			"type": "os",
-			"keyColor": "Blue",
+			"keyColor": "Blue"
 		},
 		{
 			"type": "kernel",
-			"keyColor": "Blue",
+			"keyColor": "Blue"
 		},
 		{
 			"type": "initsystem",
-			"keyColor": "Blue",
+			"keyColor": "Blue"
 		},
 		{
 			"type": "de",
-			"keyColor": "Blue",
+			"keyColor": "Blue"
 		},
 		{
 			"type": "custom",
@@ -72,15 +72,15 @@
 		},
 		{
 			"type": "terminal",
-			"keyColor": "Yellow",
+			"keyColor": "Yellow"
 		},
 		{
 			"type": "shell",
-			"keyColor": "Yellow",
+			"keyColor": "Yellow"
 		},
 		{
 			"type": "editor",
-			"keyColor": "Yellow",
+			"keyColor": "Yellow"
 		},
 		{
 			"type": "custom",
@@ -95,15 +95,15 @@
 		},
 		{
 			"type": "packages",
-			"keyColor": "Green",
+			"keyColor": "Green"
 		},
 		{
 			"type": "disk",
-			"keyColor": "Green",
+			"keyColor": "Green"
 		},
 		{
 			"type": "memory",
-			"keyColor": "Green",
+			"keyColor": "Green"
 		},
 		{
 			"type": "custom",

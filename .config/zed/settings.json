@@ -49,7 +49,6 @@
     "show_branch_icon": true,
     "show_user_menu": false,
     "show_user_picture": false,
-    "show_sign_in": false,
   },
   "ui_font_size": 17.0,
   "use_smartcase_search": true,

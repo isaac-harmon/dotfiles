@@ -11,7 +11,7 @@
   "buffer_font_features": { "calt": false },
   "collaboration_panel": {
     "default_width": 350.0,
-    "dock": "right",
+    "dock": "left"
   },
   "colorize_brackets": true,
   "debugger": { "stepping_granularity": "instruction" },
@@ -19,6 +19,7 @@
   "disable_ai": true,
   "git_panel": {
     "default_width": 350.0,
+    "dock": "left",
     "status_style": "label_color",
     "tree_view": true,
   },
@@ -28,11 +29,14 @@
     "current_line_highlight": "none",
     "show": "auto",
   },
-  "notification_panel": { "default_width": 350.0 },
-  "outline_panel": { "default_width": 350.0 },
+  "outline_panel": {
+    "default_width": 350.0,
+    "dock": "left"
+  },
   "project_panel": {
     "bold_folder_labels": true,
     "default_width": 350,
+    "dock": "left",
     "indent_size": 25.0,
   },
   "restore_on_startup": "launchpad",
@@ -46,7 +50,6 @@
   },
   "theme": "One Dark Pro",
   "title_bar": {
-    "show_branch_icon": true,
     "show_user_menu": false,
     "show_user_picture": false,
   },

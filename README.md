@@ -10,10 +10,3 @@ As I could break my linux installation via tinkering, I've archived these here t
 - [**Starship**](https://starship.rs/) - Terminal prompt rice
 
 - [**Fastfetch**](https://github.com/fastfetch-cli/fastfetch) - Terminal startup rice
-
-- [**Lazygit**](https://github.com/jesseduffield/lazygit) - Streamlined TUI Git interface
-
-- [**Rust**](https://rust-lang.org/) - One of my prefered langauges. Remove the following line from the [.bashrc](.bashrc) if not wanted:
-```bash
-. "$HOME/.cargo/env"
-```
